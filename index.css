@@ -1,0 +1,219 @@
+  /* importing google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box ;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    display:flex;
+    align-items:baseline;
+    background:#05445E;
+    height: 80px;
+    width: 100%;
+    position:relative;
+}
+.nav-btns
+{
+    display:flex;
+    float:right;
+    position:absolute;
+    top:20px;
+    right:50px;
+    padding-top: 0px;
+    cursor: pointer;
+    gap:50px;
+}
+.home,.about{
+    margin-bottom:10px;
+    background-color:#159A7F;
+    position:relative;
+    color:white;
+    font-size:18px;
+}
+.home{
+    padding: 10px;
+    box-shadow:5px 5px 7px 0px white;
+}
+.about{
+    padding:10px;
+    box-shadow:5px 5px 7px 0px white;
+    margin-right:10px;
+}
+.home:hover{
+    background-color:#159A7F;
+    transition:0.5s;
+}
+.about:hover{
+    background-color:#159A7F;
+    transition:0.5s;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.logo
+{
+    display:flex;
+    justify-content:space-evenly;
+    width:300px;
+    height:70px;
+    padding:5px;
+    margin-left:550px;
+    position:absolute;
+    top:7px; 
+    left:50px;
+    color:black;
+    border:5px solid black;
+} 
+.logo h1{
+    font-size:25px;
+    font-weight:700;
+}
+.logo .logo2{
+   
+    height:50px;
+    width:50px;
+}
+.wrapper
+{
+    width:100vw;
+    height:100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 25%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.pass-box
+{
+    height:70%;
+    width:30%;
+    margin-left:35%;
+    margin-top:3%; 
+    background-color: #E7F2F8;
+    opacity:0.8;
+    border:1.5px solid black;
+    border-radius:2%;
+}
+.pass-box h2{
+   text-align:center;
+}
+hr{
+    border:1px solid rgb(168, 166, 166);
+}
+.text-box{
+    display:flex;
+    gap:0px; 
+} 
+.input-box
+{
+    height:35px;
+    margin:10px;
+    margin-right:0px;
+}
+.copy-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    color:black;
+    border: none;
+    border-radius: 5px;
+}
+.pass-length{
+    margin-left:10px;
+}
+.pass-length input{
+    width:93%;
+}
+.setting
+{
+    margin-left:10px;
+}
+.options
+{
+    display:flex;
+    gap:50px; 
+    flex-wrap:wrap;
+    margin-left:30px; 
+    padding-top:10px;
+}
+.option input #symbols
+{
+    margin-right:10px;
+}
+.option input #include-spaces
+{
+    margin-right:10px;
+}
+.len
+{
+    font-weight:400;
+}
+.generate{
+    background:#159A7F;
+    color:white;
+    width:90%;
+    cursor:pointer;
+    height:35px;
+    margin:2px;
+    border:none;
+    border-radius:5px;
+    position:relative;
+    text-align:center;
+    font-size:18px;
+    box-shadow:5px 5px 7px 0px #14D8A7;
+    opacity:0.9;
+}
+.generate:active{
+    background-color:#11695A;
+}
+.pass-indicator{
+    width: 92%;
+    margin-left:10px;
+    height: 4px;
+    position: relative;
+    background: #dfdfdf;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+}
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+.pass-indicator#weak::before{
+    width: 20%;
+    background: #E64A4A;
+}
+.pass-indicator#medium::before{
+    width: 50%;
+    background: #f1c80b;
+}
+.pass-indicator#strong::before{
+    width: 100%;
+    background: seagreen;
+}
+.pass-box.pass-length{
+    margin: 1.56rem 0 1.25rem;
+}
+.options .option label{
+    cursor: pointer;
+    padding-left: 0.63rem;
+}
+
+li{
+    list-style:none;
+}
+#symbols
+{
+    margin-right:5px;
+}
+
